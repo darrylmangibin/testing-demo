@@ -19,3 +19,12 @@ describe('absoute', () => {
 		expect(result).toBe(0);
 	});
 });
+
+describe('greet', () => {
+	it('shoult return the greeting message', () => {
+		const result = lib.greet('LD');
+
+		expect(result).toMatch(/LD/);
+		expect(result).toContain('LD');
+	});
+});
